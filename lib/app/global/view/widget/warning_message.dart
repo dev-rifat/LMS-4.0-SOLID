@@ -1,0 +1,15 @@
+import 'package:fluttertoast/fluttertoast.dart';
+
+import '../../../../utils/app_color.dart';
+
+
+void showWarningMessage({String? message}) async =>
+    Fluttertoast.showToast(
+        msg: "$message",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        timeInSecForIosWeb: 1,
+        backgroundColor: AppColor.primaryOrange,
+        textColor: AppColor.cardColor,
+        fontSize: 16.0
+    );
